@@ -1,3 +1,0 @@
-/home/v/Documents/documents/Compilers/Judson-Santiago-compilers-course/postfix-sample/debug/CMakeFiles/postfix.dir
-/home/v/Documents/documents/Compilers/Judson-Santiago-compilers-course/postfix-sample/debug/CMakeFiles/edit_cache.dir
-/home/v/Documents/documents/Compilers/Judson-Santiago-compilers-course/postfix-sample/debug/CMakeFiles/rebuild_cache.dir

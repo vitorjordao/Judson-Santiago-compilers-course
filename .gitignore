@@ -1,0 +1,4 @@
+postfix-sample/postfix
+postfix-sample/debug/*
+postfix-sample/release/*
+postfix-sample/*.o
