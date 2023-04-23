@@ -1,0 +1,27 @@
+Preview sintax:
+expr -> expr expr +
+     |  expr expr -
+     |  term
+term -> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+
+1) Build annotated derivation trees for strings in postfix format.
+a) 95-2+
+b) 952+-
+
+
+2) Construct a syntax-directed translation scheme that translates arithmetic expressions (with addition and subtraction only) from postfix notation to infix notation.
+
+Sintax:
+expr -> expr expr + { print('+') }
+     |  expr expr - { print('-') }
+     |  term
+term -> 0
+     | 1 { print('1') }
+     | 2 { print('2') }
+     | 3 { print('3') }
+     | 4 { print('4') }
+     | 5 { print('5') }
+     | 6 { print('6') }
+     | 7 { print('7') }
+     | 8 { print('8') }
+     | 9 { print('9') }
