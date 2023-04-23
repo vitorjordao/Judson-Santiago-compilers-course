@@ -8,27 +8,35 @@ using std::endl;
 void Parser::Expr()
 {
 	
-	// expr -> + expr expr { print(+) }
-	if (lookahead == '+')
+	while (true)
 	{
-		Match('+');
-		Expr();
-		Expr();
-		cout << '+';
+		// oper -> + term term { print(+) } oper
+		if (lookahead == '+')
+		{
+			Match('+');
+			Term();
+			Term();
+			cout << '+';
+		}
+		// oper -> - term term { print(-) } oper
+		else if (lookahead == '-')
+		{
+			Match('-');
+			Term();
+			Term();
+			cout << '-';
+		}
+		// prodção vazia
+		else return; 
 	}
-	// expr -> + expr expr { print(-) }
-	else if (lookahead == '-')
-	{
-		Match('-');
-		Expr();
-		Expr();
-		cout << '-';
-	} 
-	// expr -> term
-	else if(isdigit(lookahead)) {
+}
+
+void Parser::Term() {
+	if(isdigit(lookahead)) {
 		cout << lookahead;
 		Match(lookahead);
-	}
+	} else
+		throw SyntaxError{};
 }
 
 void Parser::Match(char t)

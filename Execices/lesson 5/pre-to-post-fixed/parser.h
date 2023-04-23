@@ -6,6 +6,7 @@ private:
 	char lookahead;
 	
 	void Expr();
+	void SubExpr();
 	void Term();
 	void Match(char t);
 
