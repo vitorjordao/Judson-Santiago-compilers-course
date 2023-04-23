@@ -1,4 +1,5 @@
 postfix-sample/postfix
 postfix-sample/debug/*
 postfix-sample/release/*
-postfix-sample/*.o
+**/*.o
+Execices/lesson 5/pre-to-post-fixed/pretopostfix
